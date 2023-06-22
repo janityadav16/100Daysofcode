@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>the basic format</title>
+    </head>
+    <body>
+        <form>
+        <label for="fname">first name</label><br>
+        <input type="text" id="fanme" name="first name" value="bhondu"><br>
+        <label for="lname">last name</label><br>
+        <input type="text" id="lname" name="last name" value="lal"><br>   
+        <label for="email">email</label><br>
+        <input type="text" id="email" name="email"><br>
+        <input type="submit" value="submit"><br>
+    </form>
+    </body>
+</html>

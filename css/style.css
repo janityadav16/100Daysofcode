@@ -1,241 +1,330 @@
-:root {
-    --main-white: #eee;
-    --main-yellow: #f1c40f;
-    --main-gray: #ddd;
+/* CSS for header */
+header {
+	background-color: red;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	z-index: 1000;
 }
 
-body{
-    background-color: var(--main-gray);
-}
 
-#header {
-    width: 100%;
-    display: flex;
-    background-color: transparent;
-}
-
+/* CSS for logo */
 .logo {
-    display: block;
-    width: 49%;
+	width: 100px;
+	height: 50px;
+	margin: 0;
+	color: white;
 }
 
-
-
-#header-img {
-    max-width: 300px; 
-}
-
-#nav-bar {
-    width: 49%;
-    display: flex;
-    justify-content: right;
-}
-
-
-#nav-bar ul li {
-    display: inline-block;
-    padding: 0 15px 0 15px;
-    margin: 0 25px 0 25px;
-   
-}
-
-#nav-bar ul li a {
-    color: black;
-    text-decoration: none;
-    font-weight: 400;
-    font-family: 'Lato', sans-serif;
-}
-
-.subcribe-section {
-    width: 100%;
-    
-}
-
-.top-heading {
-    text-align: center;
-}
-
-form {
-    width: 100%;
-    max-width: 25%;
-    margin: 0 auto 0 auto;
-}
-
-.submit-button {
-    display: block;
-    background-color: var(--main-yellow);
-    padding: 5px;
-    width:100%;
-    height:30px;
-    margin:15px 0;
-}
-
-
-
-.input-email{
-    max-width:250px;
-    width:100%;
-    padding:6px;
-}
-.pricing{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin: 10px;
-    border: 3px solid #000;
-    padding:3px;
-    box-sizing:box-border;
-}
-
-footer{
-    display:flex;
-    justify-content: flex-end;
-}
-
-ul { 
-    text-align:center;
-    display: block;
-    list-style-type: none;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-}
-.pricing{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: calc(100% / 3);
-    margin: 10px;
-    border: 3px solid #000;
-    border-radius: 3px;
-}
-.feature-video{
-    width:100%;
-    max-width:70%;
-}
-
-.product{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: calc(100% / 3);
-    margin: 10px;
-    border: 3x solid #000;
-    border-radius: 3px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-body {
-    margin: 0px;
-}
+/* CSS for navigation bar */
 nav {
-    background-color: var(--main-red);
-    width: 100%;
-    height: 70px;
-    display: flex;
-    justify-content: end;
-    margin-right: 8px;
-    position: fixed;
+	margin-left: auto;
 }
 
-nav ul {
-    margin: 0px;
-    margin-right: 15px;
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
 }
-nav ul li {
-    display: inline;
-    align-items: right;
-    margin: 0px;
-    padding: 0px;
-    margin-right: 0px;
+
+li {
+	margin-right: 10px;
+	color: white;
+}
+
+li a {
+	color: white;
+	text-decoration: none;
+}
+
+/* CSS for hover effect */
+li:hover {
+	background-color: black;
+}
+
+/* CSS for banner section */
+.banner {
+	background-color: white;
+	color: black;
+	padding: 20px;
+	text-align: center;
+	width: 100%;
+	height: 600px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.banner h1 {
+	font-size: 70px;
+	margin: 0px;
 
 }
 
-nav ul li a {
-    text-decoration: none;
-    display: inline-block;
-    color: var(--main-white);
-    font-size: 2.2rem;
-    width: 100px;
-    height: 38px;
-    padding: 1rem;
+.banner p {
+	font-size: 22px;
 }
 
-nav ul li a:hover {
-    text-decoration: none;
-    background-color: var(--main-gray);
+.social-links {
+	margin-top: 20px;
 }
 
-#welcome-section {
-    background-color: var(--main-gray);
-    margin: 0px;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+.social-links a {
+	color: black;
+	text-decoration: none;
+	margin-right: 10px;
 }
 
-#welcome-section h1 {
-    color: var(--main-white);
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 6rem;
-    margin: 0;
+/* CSS for education section */
+.education-section {
+	background-color: #f9f9f9;
+	padding: 20px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
 }
 
-#welcome-section p {
-    color: var(--main-red);
-    font-size: 3rem;
-    font-weight: 200;
-    font-style: italic;
-    margin: 0;
+.education-content {
+	width: 80%;
+	max-width: 800px;
 }
 
-#projects {
-    background-color: var(--main-blue);
-    height: 100vh;
+.education-content h2 {
+	text-align: center;
+	font-family: Verdana;
+	font-size: 30px;
 }
 
-.projects-section-header {
-    color: var(--main-white);
-    text-align: center;
-    width: 100%;
-    max-width: 720px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    text-align: center;
-    font-size: 3rem;
-    margin: 0rem auto 0 auto;
-    padding: 6rem 0 0 0 ;
-    border-bottom: 0.2rem solid var(--main-white);
+.education-item {
+	margin-bottom: 20px;
+	text-align: left;
 }
 
-.projects-grid {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
+.college {
+	font-weight: bold;
 }
 
-.projects-grid a {
-    width: 33%;
-} */
+.year-subject {
+	margin-top: 10px;
+}
+
+.achievement {
+	font-style: italic;
+}
+
+/* CSS for projects section */
+.projects-section {
+	background-color: #f2f2f2;
+	padding: 20px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+
+.projects-content h2 {
+	text-align: center;
+	font-family: Verdana;
+	font-size: 30px;
+}
+
+.projects-content {
+	width: 80%;
+	max-width: 800px;
+}
+
+.project-item {
+	margin-bottom: 20px;
+	text-align: left;
+}
+
+
+.client {
+	font-weight: bold;
+}
+
+.duration-amount {
+	margin-top: 10px;
+}
+
+.certificate-section {
+	background-color: #f9f9f9;
+	padding: 20px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.certificate-content {
+	width: 80%;
+	max-width: 800px;
+}
+
+.certificate-content h2 {
+	text-align: center;
+	font-family: Verdana;
+	font-size: 30px;
+}
+
+.certificate-item {
+	margin-bottom: 20px;
+	text-align: left;
+}
+
+.college {
+	font-weight: bold;
+}
+
+.year {
+	margin-top: 10px;
+}
+
+.certificate-link a {
+	color: #333;
+	text-decoration: none;
+}
+
+/* CSS for gallery section */
+.gallery-section {
+	padding: 20px;
+	background-color: #f9f9f9;
+	text-align: center;
+}
+
+.gallery-section h2 {
+	font-family: Verdana;
+	font-size: 30px;
+}
+
+.gallery-row {
+	display: flex;
+	justify-content: center;
+	/* Center the gallery row */
+	margin-bottom: 20px;
+}
+
+.gallery-item {
+	flex-basis: calc(33.33% - 10px);
+	/* Three items per row with a 10px gap */
+	overflow: hidden;
+}
+
+.gallery-item img {
+	width: 100%;
+	height: auto;
+}
+
+.red {
+	color: red;
+}
+
+.about-section {
+	background-color: #f9f9f9;
+	padding: 20px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.about-content {
+	width: 80%;
+	max-width: 800px;
+}
+
+.about-content h2 {
+	text-align: center;
+	font-family: Verdana;
+	font-size: 30px;
+}
+
+.about-content p {
+	text-align: justify;
+	font-family: Verdana;
+	line-height: 30px;
+}
+
+/* CSS for responsive design */
+@media only screen and (max-width: 768px) {
+	/* Adjustments for smaller screens */
+
+	/* Header */
+	header {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.logo {
+		margin-bottom: 10px;
+	}
+
+	nav {
+		margin-top: 10px;
+		margin-left: 0;
+	}
+
+	/* Banner */
+	.banner {
+		height: auto;
+		padding: 40px 20px;
+	}
+
+	.banner h1 {
+		font-size: 40px;
+	}
+
+	.banner p {
+		font-size: 18px;
+	}
+
+	/* About section */
+	.about-content {
+		width: 100%;
+	}
+
+	/* Education section */
+	.education-content {
+		width: 100%;
+	}
+
+	/* Certificate section */
+	.certificate-content {
+		width: 100%;
+	}
+
+	/* Gallery section */
+	.gallery-item {
+		flex-basis: calc(50% - 10px);
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	/* Further adjustments for smaller screens */
+
+	/* Banner */
+	.banner h1 {
+		font-size: 30px;
+	}
+
+	.banner p {
+		font-size: 16px;
+	}
+
+	/* Education section */
+	.education-item,
+	.certificate-item {
+		text-align: center;
+	}
+
+	.year-subject,
+	.year,
+	.certificate-link {
+		margin-top: 5px;
+	}
+
+	/* Gallery section */
+	.gallery-item {
+		flex-basis: 100%;
+	}
+}

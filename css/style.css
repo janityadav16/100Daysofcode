@@ -315,6 +315,34 @@
             margin: 0;
         }
         
+        
+/* CSS for Action Section */
+.action-section {
+    text-align: center;
+    padding: 15px;
+  }
+  
+  .action-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FF0000;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .action-button:hover {
+    background-color: #FFFFFF;
+    color: #FF0000;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .action-button {
+      padding: 8px 16px;
+    }
+  }
+
         /* CSS for responsive design */
         @media only screen and (max-width: 768px) {
           /* Adjustments for smaller screens */

@@ -191,14 +191,25 @@ li a {
 .college {
 	font-weight: bold;
 }
+.college a{
+    text-decoration: none;
+    color:#FF0000;
+}
+.college a:hover{
+    color:black;
+}
 
 .year {
 	margin-top: 10px;
 }
 
 .certificate-link a {
-	color: #333;
 	text-decoration: none;
+    color:red;
+}
+
+.certificate-link a:hover {
+    color:black;
 }
 
 /* CSS for gallery section */

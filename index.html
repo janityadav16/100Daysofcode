@@ -1,75 +1,111 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>100DaysOfCode</title>
-        <link rel="icon" href="img/favicon.ico">
-        <meta name="keywords" content="janit, nakul, yuvraj, iit, neet">
-        <meta name="description" content="Free Web tutorials">
-        <meta name="author" content="Yuvraj">
-
-    </head>
-    <body>
-        <a>Hello &copy; &#128513;</a>
-        <a>Why</a>
-        <a>what</a>
-
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/FK6_o1tcIj0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <h1>100DaysOfCode</h1>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13503.003340834164!2d76.35483705!3d32.210944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391b516591a14b57%3A0xe48427da44f2efe6!2sEspresso%20Bar%20-%20Bar%20In%20Dharamshala!5e0!3m2!1sen!2sin!4v1685531017673!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <p> <strong>Formatting</strong> <i>elements</i> were <b style="color: red;">designed</b> <br> to <del style="color: blue;">display</del> <ins>special</ins> types of text: log<sub>10</sub> and 2<sup>2</sup></p>
-        <a href="https://twitter.com/nakul1710" target="_target">Follow Me On Twitter</a>
-
-        <img src="img/a.avif" alt="No photo Available">
-
-        <iframe src="https://www.w3schools.com/html/html_favicon.asp" width="100%">
-
-        </iframe>
-        <blockquote>Hellow what's app</blockquote>
-
-        <abbr title="World Health org">WHO</abbr>
-        <address>
-            Behror <br>
-            Alware <br>
-            Rajasthan <br>
-        </address>
-
-        <p style="color: white; background-color: black; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 20px;">
-            Hello Janit
-        </p>
-
-        <table>
-            <tr>
-                <th>Name</th>
-                <th>Age</th>
-                <th>City</th>
-            </tr>
-            <tr>
-                <td>Yuvraj</td>
-                <td>20</td>
-                <td>Dharamshala</td>
-            </tr>
-        </table>
-
-
+  <head>
+    <title>Header Example</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header>
+      <h1 class="logo">janit</h1>
+      <nav>
         <ul>
-            <li>Janit</li>
-            <li>Nakul</li>
-            <li>Yuvraj</li>
+          <li>
+            <a href="#aboutme">About Me</a>
+          </li>
+          <li>
+            <a href="#education">Education</a>
+          </li>
+          <li>
+            <a href="#certificates">Certificates</a>
+          </li>
+          <li>
+            <a href="#gallary">Gallary</a>
+          </li>
         </ul>
-        <ol>
-            <li>Janit</li>
-            <li>Nakul</li>
-            <li>Yuvraj</li>
-        </ol>
-
-
-        <dl>
-            <dt>Pro</dt>
-            <dd> - Hello</dd>
-            <dd>- Why</dd>
-            <dt>Cons</dt>
-            <dd> - Hello</dd>
-            <dd>- Why</dd>
-        </dl>
-    </body>
+      </nav>
+    </header>
+    <section class="banner">
+      <h1>
+        <span>JANIT</span>
+        <span class="red">YADAV</span>
+      </h1>
+      <p>
+        <b>JAIPUR, INDIA</b>
+      </p>
+      <div class="social-links">
+        <a href="https://github.com/janityadav16">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://twitter.com/janityadav16">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.instagram.com/janit_16/">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </section>
+    <section class="about-section" id="aboutme">
+      <div class="about-content">
+        <h2>About Us</h2>
+        <p> Welcome to Janit Yadav's profile! Janit is a passionate individual who loves exploring new places and is enthusiastic about the world of web development. Currently pursuing a Bachelor's degree in Computer Applications (BCA) at Manipal University, Jaipur, Janit is diving deep into the realm of HTML and CSS, honing his skills in building beautiful and interactive websites. </br>
+          <br> Janit's fascination with technology extends beyond coding languages. He has a particular fondness for macOS, appreciating its user-friendly interface and seamless integration with creative tools. Inspired by the possibilities that JavaScript offers in terms of dynamic web development, he aspires to broaden his knowledge and expertise in this powerful programming language.
+        </p>
+      </div>
+    </section>
+    <section class="education-section" id="education">
+      <div class="education-content">
+        <h2>Education</h2>
+        <div class="education-item">
+          <p class="college">Manipal Univerity,Jaipur</p>
+          <p class="year-subject">Year: 2023 - 2026 | BCA</p>
+        </div>
+        <div class="education-item">
+          <p class="college">Takshila Public School, Behror</p>
+          <p class="year-subject">Year: 2009 - 2022 | CBSE</p>
+          <!-- <p class="achievement">percentage="75%"</p> -->
+        </div>
+      </div>
+    </section>
+    <!-- <section class="projects-section"><div class="projects-content"><h2>Projects</h2><div class="project-item"><p class="client">Client: Company A</p><p class="duration-amount">Duration: 6 months | Amount Charged: $10,000</p></div><div class="project-item"><p class="client">Client: Company B</p><p class="duration-amount">Duration: 3 months | Amount Charged: $5,000</p></div></div></section> -->
+    <section class="certificate-section" id="certificates">
+      <div class="certificate-content">
+        <h2>Certificates</h2>
+        <div class="certificate-item">
+          <p class="college">Responsive web designing</p>
+          <p class="year">Year: 2023</p>
+          <p class="certificate-link">Certificate Link: <a href="https://www.freecodecamp.org/certification/fcc5a0561e9-f322-41e2-a1ae-d62a3530a1ca/responsive-web-design">Responsive web designing</a>
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="gallery-section" id="gallary">
+      <h2>Gallary</h2>
+      <div class="gallery-row">
+        <div class="gallery-item">
+          <img src="img/1.jpeg" alt="Image 1">
+        </div>
+        <div class="gallery-item">
+          <img src="img/2.jpeg" alt="Image 2">
+        </div>
+        <div class="gallery-item">
+          <img src="img/3.jpeg" alt="Image 3">
+        </div>
+      </div>
+      <div class="gallery-row">
+        <div class="gallery-item">
+          <img src="img/4.jpeg" alt="Image 4">
+        </div>
+        <div class="gallery-item">
+          <img src="img/5.jpeg" alt="Image 5">
+        </div>
+        <div class="gallery-item">
+          <img src="img/6.jpeg" alt="Image 6">
+        </div>
+      </div>
+      <!-- Add more gallery rows as needed -->
+    </section>
+    <!-- Rest of the page content goes here -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+  </body>
 </html>

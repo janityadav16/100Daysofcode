@@ -3,7 +3,7 @@ body {
     cursor: url(https://cdn.custom-cursor.com/db/5034/32/arrow2850.png) , default !important;
 }
 
-main {}
+
 
 /* CSS for header */
 header {
@@ -96,6 +96,8 @@ li a {
     color: black;
     text-decoration: none;
     margin-right: 10px;
+    cursor: url(https://cdn.custom-cursor.com/db/5033/32/arrow2850.png), default !important;
+
 }
 
 /* CSS for education section */

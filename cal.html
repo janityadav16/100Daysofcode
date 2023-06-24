@@ -5,25 +5,31 @@
     <style>
         body {
             text-align: center;
+            font-family: Arial, sans-serif;
         }
 
         .calculator {
-            width: 250px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 300px;
             margin: 50px auto;
             border: 1px solid #ccc;
             border-radius: 5px;
             padding: 10px;
+            background-color: #f1f1f1;
         }
 
         .screen {
             width: 100%;
-            height: 40px;
+            height: 50px;
             margin-bottom: 10px;
-            background-color: #f9f9f9; /* Background color for the screen */
+            background-color: #fff;
             border: 1px solid #ccc;
             border-radius: 3px;
             padding: 5px;
             text-align: right;
+            font-size: 24px;
         }
 
         .buttons {
@@ -34,44 +40,135 @@
 
         .button {
             padding: 10px;
-            background-color: #f2f2f2;
-            border: 1px solid black;
+            background-color: #e0e0e0;
+            border: 1px solid #ccc;
             border-radius: 3px;
             cursor: pointer;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
-            transform-style: preserve-3d;
-            perspective: 1000px;
             box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+            font-size: 18px;
         }
 
         .button:hover {
             transform: translateY(2px) scale(1.05);
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
         }
+
+        .button:active {
+            transform: translateY(4px);
+            box-shadow: none;
+        }
+
+        .sidebar {
+            width: 100%;
+            text-align: left;
+        }
+
+        .history {
+            margin-bottom: 5px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .history:hover {
+            text-decoration: underline;
+        }
+
+        .clear-button {
+            margin-top: 10px;
+            padding: 5px 10px;
+            background-color: #e0e0e0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+            font-size: 14px;
+        }
+
+        .clear-button:hover {
+            transform: translateY(2px) scale(1.05);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
     </style>
 </head>
 <body>
-    <h2>Calculator</h2>
     <div class="calculator">
-        <div class="screen" id="screen">0</div>
-        <div class="buttons">
-            <div class="button">7</div>
-            <div class="button">8</div>
-            <div class="button">9</div>
-            <div class="button">/</div>
-            <div class="button">4</div>
-            <div class="button">5</div>
-            <div class="button">6</div>
-            <div class="button">*</div>
-            <div class="button">1</div>
-            <div class="button">2</div>
-            <div class="button">3</div>
-            <div class="button">-</div>
-            <div class="button">0</div>
-            <div class="button">.</div>
-            <div class="button">=</div>
-            <div class="button">+</div>
+        <div>
+            <div class="screen" id="screen">0</div>
+            <div class="buttons">
+                <div class="button" onclick="addToScreen('7')">7</div>
+                <div class="button" onclick="addToScreen('8')">8</div>
+                <div class="button" onclick="addToScreen('9')">9</div>
+                <div class="button" onclick="addToScreen('/')">÷</div>
+                <div class="button" onclick="addToScreen('4')">4</div>
+                <div class="button" onclick="addToScreen('5')">5</div>
+                <div class="button" onclick="addToScreen('6')">6</div>
+                <div class="button" onclick="addToScreen('*')">x</div>
+                <div class="button" onclick="addToScreen('1')">1</div>
+                <div class="button" onclick="addToScreen('2')">2</div>
+                <div class="button" onclick="addToScreen('3')">3</div>
+                <div class="button" onclick="addToScreen('-')">-</div>
+                <div class="button" onclick="addToScreen('0')">0</div>
+                <div class="button" onclick="addToScreen('.')">.</div>
+                <div class="button" onclick="calculate()">=</div>
+                <div class="button" onclick="addToScreen('+')">+</div>
+            </div>
+            <button class="clear-button" onclick="clearScreen()">Clear</button>
+        </div>
+        <div class="sidebar">
+            <h2>History</h2>
+            <div id="history" class="history"></div>
         </div>
     </div>
+
+    <script>
+        var calculationHistory = []; // Array to store the calculation history
+
+        // Function to add the clicked button value to the screen
+        function addToScreen(value) {
+            var screen = document.getElementById('screen');
+            screen.innerHTML += value;
+        }
+
+        // Function to calculate the result and display it on the screen
+        function calculate() {
+            var screen = document.getElementById('screen');
+            var expression = screen.innerHTML;
+            var result = eval(expression);
+            screen.innerHTML = result;
+
+            // Add the calculation to the history
+            calculationHistory.push(expression + " = " + result);
+            updateHistory();
+        }
+
+        // Function to update the history display
+        function updateHistory() {
+            var historyElement = document.getElementById('history');
+            historyElement.innerHTML = ""; // Clear the history display
+
+            // Append each calculation in the history array to the history display
+            for (var i = 0; i < calculationHistory.length; i++) {
+                var calculation = document.createElement('div');
+                calculation.innerHTML = calculationHistory[i];
+
+                // Add event listener to make the history evaluation clickable
+                calculation.addEventListener('click', function() {
+                    var expression = this.innerHTML.split(' = ')[0];
+                    var screen = document.getElementById('screen');
+                    screen.innerHTML = expression;
+                });
+
+                historyElement.appendChild(calculation);
+            }
+        }
+
+        // Function to clear the calculator screen
+        function clearScreen() {
+            var screen = document.getElementById('screen');
+            screen.innerHTML = "0";
+        }
+    </script>
 </body>
 </html>

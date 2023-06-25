@@ -3,8 +3,6 @@ body {
     cursor: url(https://cdn.custom-cursor.com/db/5034/32/arrow2850.png) , default !important;
 }
 
-
-
 /* CSS for header */
 header {
     background-color: red;
@@ -29,6 +27,7 @@ nav {
     margin-left: auto;
 }
 
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -38,8 +37,8 @@ ul {
 
 li {
     color: white;
-    padding: 15px;
-    width: 75px;
+    padding: 5px;
+    max-width: 80px;
     text-align: center;
 }
 
@@ -69,7 +68,6 @@ li a {
     color: black;
     padding: 20px;
     text-align: center;
-    width: 100%;
     height: 600px;
     margin: 0 auto;
     display: flex;
@@ -104,7 +102,6 @@ li a {
 .education-section {
     background-color: white;
     padding: 20px;
-    width: 100%;
     display: flex;
     justify-content: center;
 }
@@ -141,7 +138,6 @@ li a {
 .projects-section {
     background-color: #f2f2f2;
     padding: 20px;
-    width: 100%;
     display: flex;
     justify-content: center;
 }
@@ -175,7 +171,6 @@ li a {
 .certificate-section {
     background-color: white;
     padding: 20px;
-    width: 100%;
     display: flex;
     justify-content: center;
 }
@@ -281,7 +276,6 @@ li a {
 .about-section {
     background-color: #f9f9f9;
     padding: 20px;
-    width: 100%;
     display: flex;
     justify-content: center;
 }

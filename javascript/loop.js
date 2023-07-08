@@ -1,9 +1,4 @@
- /**
-  * divisble by 3 - fizz
-  * divisible by 5 - buzz
-  * divisible by 3&5 -fizzbuzz
-  * 
-  */
+
  
  for (let i = 1; i <= 100; i++) {
     if (i % 3 === 0 && i % 5 === 0) {

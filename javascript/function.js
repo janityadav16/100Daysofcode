@@ -1,27 +1,3 @@
-function add(a,b){
-    return a+b
-}
-
-add(4,5)
-
-
-function calculateGrade(score) {
-    if (score >= 90) {
-      return 'A';
-    } else if (score >= 80) {
-      return 'B';
-    } else if (score >= 70) {
-      return 'C';
-    } else if (score >= 60) {
-      return 'D';
-    } else {
-      return 'F';
-    }
-  }
-  console.log(calculateGrade(55))
-
-//Write a function which will return the total percentage of the marks
-//We will provide marks of 5 subjects
 
 function calculatePercentage(subject1, subject2, subject3, subject4, subject5) {
     const totalMarks = subject1 + subject2 + subject3 + subject4 + subject5;

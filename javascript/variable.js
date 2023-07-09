@@ -10,7 +10,7 @@ function studentdetail(name, age, city, qualify,marks){
 
 const CITY="alwar"
 
-//camel case for second letter in variable it is capital
+//camel case for second letter in variable it is capital it is to signify it
 let studentName ="janit"
 var studentAge=18
 var qualify=true
@@ -23,4 +23,3 @@ studentdetail(studentName, studentAge, CITY, qualify,marks)
  marks=[50,46,56]
  studentdetail(studentName, studentAge, CITY, qualify, marks)
  studentdetail("vandana", 44, CITY, false,[53,54,66])
- 

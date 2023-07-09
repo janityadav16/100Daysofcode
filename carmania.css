@@ -13,10 +13,16 @@ header {
 
   .menu {
     display: flex;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
   }
 
   .menu-item {
     margin-right: 10px;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
   }
 
   section {

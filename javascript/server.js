@@ -31,6 +31,10 @@ function grade(A){
 grade(78)
 
 
+for (let i = 1; i <= 5; i++) {
+    console.log(i);
+  }
+  
 const marks = [78, 85, 92, 67, 88];
 let totalMarks = 0;
 
@@ -39,3 +43,5 @@ for (let i = 0; i < marks.length; i++) {
 }
 
 console.log("Total marks:", totalMarks);
+
+

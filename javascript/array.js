@@ -22,3 +22,7 @@
 (val => {
      console.log("sgdjsdg") 
     })()
+
+
+    const fruits = ["apple", "banana", "orange", "grape", "mango"];
+console.log(fruits);

@@ -1,75 +1,76 @@
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #f1f1f1;
-  }
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	background-color: #f1f1f1;
+}
 
-  .logo {
-    width: 100px;
-    height: 100px;
-  }
+.logo {
+	width: 100px;
+	height: 100px;
+}
 
-  .menu {
-    display: flex;
-  }
+.menu {
+	display: flex;
+}
 
-  .menu-item {
-    margin-right: 10px;
-  }
+.menu-item {
+	margin-right: 10px;
+}
 
-  section {
-    padding: 40px;
-    background-color: #ffffff;
-    text-align: center;
-  }
+section {
+	padding: 40px;
+	background-color: #ffffff;
+	text-align: center;
+}
 
-  section h2 {
-    font-size: 24px;
-    color: #333333;
-    margin-bottom: 20px;
-  }
+section h2 {
+	font-size: 24px;
+	color: #333333;
+	margin-bottom: 20px;
+}
 
-  section p {
-    font-size: 16px;
-    color: #666666;
-    line-height: 1.5;
-  }
+section p {
+	font-size: 16px;
+	color: #666666;
+	line-height: 1.5;
+}
 
-  #services {
-    padding: 40px;
-    background-color: #f1f1f1;
-  }
+#services {
+	padding: 40px;
+	background-color: #f1f1f1;
+}
 
-  #services h2 {
-    font-size: 24px;
-    color: #333333;
-    margin-bottom: 20px;
-  }
+#services h2 {
+	font-size: 24px;
+	color: #333333;
+	margin-bottom: 20px;
+}
 
-  #services ul {
-    list-style-type: none;
-    padding: 0;
-  }
+#services ul {
+	list-style-type: none;
+	padding: 0;
+}
 
-  #services li {
-    margin-bottom: 10px;
-  }
-  #home {
-    padding: 40px;
-    background-color: #ffffff;
-    text-align: center;
-  }
+#services li {
+	margin-bottom: 10px;
+}
 
-  #home h2 {
-    font-size: 24px;
-    color: #333333;
-    margin-bottom: 20px;
-  }
+#home {
+	padding: 40px;
+	background-color: #ffffff;
+	text-align: center;
+}
 
-  #home p {
-    font-size: 16px;
-    color: #666666;
-    line-height: 1.5;
-  }
+#home h2 {
+	font-size: 24px;
+	color: #333333;
+	margin-bottom: 20px;
+}
+
+#home p {
+	font-size: 16px;
+	color: #666666;
+	line-height: 1.5;
+}

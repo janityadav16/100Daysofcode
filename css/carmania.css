@@ -1,3 +1,11 @@
+*{
+    text-decoration: none;
+    background-color: purple;
+    color: #333333;
+    justify-content: center;
+    display: inline-block;
+}
+
 header {
 	display: flex;
 	justify-content: space-between;

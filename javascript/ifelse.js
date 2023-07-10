@@ -44,3 +44,12 @@ if (temperature >= 30) {
 } else {
   console.log("It's a cold day.");
 }
+
+
+let num = 7;
+
+if (num % 2 === 0) {
+  console.log("The number is even.");
+} else {
+  console.log("The number is odd.");
+}

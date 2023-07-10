@@ -12,3 +12,12 @@
     }
   }
   
+
+  const marks = [78, 85, 92, 67, 88];
+let totalMarks = 0;
+
+for (let i = 0; i < marks.length; i++) {
+  totalMarks += marks[i];
+}
+
+console.log("Total marks:", totalMarks);

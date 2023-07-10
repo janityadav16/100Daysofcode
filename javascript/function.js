@@ -46,11 +46,20 @@ function calculateGrade(score) {
     }
   }
   console.log(calculateGrade(55))
+
   
+function calculateAveragePercentage(marks) {
+  let totalMarks = 0;
 
+  for (let i = 0; i < marks.length; i++) {
+    totalMarks += marks[i];
+  }
 
+  const averagePercentage = totalMarks / marks.length;
 
+  return averagePercentage;
+}
 
-
-
-
+const studentMarks = [85, 90, 78, 92, 88];
+const average = calculateAveragePercentage(studentMarks);
+console.log("Average Percentage:", average);

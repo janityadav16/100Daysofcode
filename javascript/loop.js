@@ -21,3 +21,19 @@ for (let i = 0; i < marks.length; i++) {
 }
 
 console.log("Total marks:", totalMarks);
+
+
+const numSemesters = 8; 
+let totalCredits = 0;
+let totalGradePoints = 0;
+
+for (let semester = 1; semester <= numSemesters; semester++) {
+  const semesterCredits = ((`Enter the credits for Semester ${semester}:`));
+  const semesterGrade = ((`Enter the GPA for Semester ${semester}:`));
+  
+  totalCredits += semesterCredits;
+  totalGradePoints += semesterCredits * semesterGrade;
+}
+
+const cgpa = totalGradePoints / totalCredits;
+console.log("Your CGPA is: " + cgpa(2));

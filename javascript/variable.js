@@ -40,16 +40,18 @@ for(i=0; i<3; i++){
 }
 
 
- function calculator(n, m, operation){
-     if(operation==="+"){
-         return n + m
-     } else if(operation==="-"){
-    return n - m
-  }else if(operation==="*"){
-    return n * m
-  }else if(operation==="%"){
-    return n % m
-  }
- }
-
+function calculator(n, m, operation){
+    if (operator == '+'){
+        result = n + m
+    }else if (operator == '-'){
+        result = n - m
+    }else if (operator == '*')
+        result = n * m
+    else if (operator == '/'){
+        result = n / m
+    }else
+        return "Invalid operator"
+    
+    return result
+}
 

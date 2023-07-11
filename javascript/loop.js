@@ -37,3 +37,5 @@ for (let semester = 1; semester <= numSemesters; semester++) {
 
 const cgpa = totalGradePoints / totalCredits;
 console.log("Your CGPA is: " + cgpa(2));
+
+

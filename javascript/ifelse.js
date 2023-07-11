@@ -53,3 +53,15 @@ if (num % 2 === 0) {
 } else {
   console.log("The number is odd.");
 }
+
+function calculator(n, m, operation){
+  if(operation==="+"){
+      return n + m
+  } else if(operation==="-"){
+ return n - m
+}else if(operation==="*"){
+ return n * m
+}else if(operation==="%"){
+ return n % m
+}
+}

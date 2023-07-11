@@ -40,12 +40,16 @@ for(i=0; i<3; i++){
 }
 
 
-// function calculator(n, m, operation){
-//     if(operation==="+"){
-//         return n + m
-//     } else if(operation==="-"){
-//     //    return n - m
-//   //  }
+ function calculator(n, m, operation){
+     if(operation==="+"){
+         return n + m
+     } else if(operation==="-"){
+    return n - m
+  }else if(operation==="*"){
+    return n * m
+  }else if(operation==="%"){
+    return n % m
+  }
+ }
 
-// //}
 

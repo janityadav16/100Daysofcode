@@ -1,84 +1,105 @@
-*{
-    text-decoration: none;
-    background-color: purple;
-    color: #333333;
-    justify-content: center;
-    display: inline-block;
-}
 
-header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 20px;
-	background-color: #f1f1f1;
-}
 
-.logo {
-	width: 100px;
-	height: 100px;
-}
-
-.menu {
-	display: flex;
-}
-
-.menu-item {
-	margin-right: 10px;
-}
-
-section {
-	padding: 40px;
-	background-color: #ffffff;
-	text-align: center;
-}
-
-section h2 {
-	font-size: 24px;
-	color: #333333;
-	margin-bottom: 20px;
-}
-
-section p {
-	font-size: 16px;
-	color: #666666;
-	line-height: 1.5;
-}
-
-#services {
-	padding: 40px;
-	background-color: #f1f1f1;
-}
-
-#services h2 {
-	font-size: 24px;
-	color: #333333;
-	margin-bottom: 20px;
-}
-
-#services ul {
-	list-style-type: none;
-	padding: 0;
-}
-
-#services li {
-	margin-bottom: 10px;
-}
-
-#home {
-	padding: 40px;
-	background-color: #ffffff;
-	text-align: center;
-}
-
-#home h2 {
-	font-size: 24px;
-	color: #333333;
-	margin-bottom: 20px;
-}
-
-#home p {
-	font-size: 16px;
-	color: #666666;
-	line-height: 1.5;
-}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  nav {
+    background-color: #666;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  main {
+    margin: 20px;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+     
+  .gallery-section {
+    padding: 20px;
+  }
+  
+  .gallery-section h2 {
+    margin-bottom: 10px;
+  }
+  
+  .gallery-section .gallery-images {
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+  
+  .gallery-section .gallery-images img {
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+  }
+  .customer-reviews-section {
+    padding: 20px;
+  }
+  
+  .customer-reviews-section h2 {
+    margin-bottom: 10px;
+  }
+  
+  .customer-reviews-section .customer-review {
+    margin-bottom: 20px;
+  }
+  
+  .customer-reviews-section .customer-review .customer-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+    border-radius: 7px;
+  }
+  
+  .customer-reviews-section .customer-review .customer-comment {
+    font-style: italic;
+  }
+  .contact-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+  }
+  
+  .contact-section h2 {
+    margin-bottom: 10px;
+  }
+  
+  .contact-section p {
+    margin-bottom: 20px;
+  }
+  
+  .contact-section ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .contact-section ul li {
+    display: inline;
+    margin-right: 10px;
+  }

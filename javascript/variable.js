@@ -49,9 +49,9 @@ function calculator(n, m, operation){
         result = n * m
     else if (operator == '/'){
         result = n / m
-    }else
+    }else{
         return "Invalid operator"
-    
+    }
     return result
 }
 

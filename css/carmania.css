@@ -1,123 +1,112 @@
-
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-  }
-  
-  nav {
-    background-color: #666;
-    color: #fff;
-    padding: 10px;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 10px;
-  }
-  
-  main {
-    margin: 20px;
-  }
-  
-  footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-  }
-     
-  .gallery-section {
-    padding: 20px;
-  }
-  
-  .gallery-section h2 {
-    margin-bottom: 10px;
-  }
-  
-  .gallery-section .gallery-images {
-    display: flex;
-    flex-wrap: wrap;
-    
-  }
-  
-  .gallery-section .gallery-images img {
-    width: 200px;
-    height: 150px;
-    margin: 10px;
-  }
-  .customer-reviews-section {
-    padding: 20px;
-  }
-  
-  .customer-reviews-section h2 {
-    margin-bottom: 10px;
-  }
-  
-  .customer-reviews-section .customer-review {
-    margin-bottom: 20px;
-  }
-  
-  .customer-reviews-section .customer-review .customer-name {
-    font-weight: bold;
-    margin-bottom: 5px;
-    border-radius: 7px;
-  }
-  
-  .customer-reviews-section .customer-review .customer-comment {
-    font-style: italic;
-  }
-  .contact-section {
-    background-color: red;
-    color: black;
-    padding: 20px;
-  }
-  
-  .contact-section h2 {
-    margin-bottom: 10px;
-  }
-  
-  .contact-section p {
-    margin-bottom: 20px;
-  }
-  
-  .contact-section ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    color: black;
-  }
-  
-  .contact-section ul li {
-    display: inline;
-    margin-right: 10px;
-    color: black;
-    padding:16px;
-    border: black;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
-  .contact-section ul li a{
-    display: inline;
-    margin-right: 10px;
-    color: black;
-    padding:16px;
-    border: black;
-  }
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
 
-  .contact{
-    padding: 0 15px 0 0;
-    max-width: 80px;
-    text-align: center;
+nav {
+  background-color: #666;
+  color: #fff;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+main {
+  margin: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.gallery-section {
+  padding: 20px;
+}
+
+.gallery-section h2 {
+  margin-bottom: 10px;
+}
+
+.gallery-section .gallery-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-section .gallery-images img {
+  width: 200px;
+  height: 150px;
+  margin: 10px;
+}
+
+.customer-reviews-section {
+  padding: 20px;
+}
+
+.customer-reviews-section h2 {
+  margin-bottom: 10px;
+}
+
+.customer-reviews-section .customer-review {
+  margin-bottom: 20px;
+}
+
+.customer-reviews-section .customer-review .customer-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.customer-reviews-section .customer-review .customer-comment {
+  font-style: italic;
+}
+
+.contact-section {
+  background-color: white;
+  padding: 20px;
+  color: white;
+}
+
+.contact-section h2 {
+  margin-bottom: 10px;
+}
+
+.contact-section p {
+  margin-bottom: 20px;
+}
+
+.contact-section ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-section ul li {
+  display: inline;
+  margin-right: 10px;
+  color: black;
+  background-color: white;
+}
+
+.contact-section ul li a {
+  color: black;
+  background-color: white;
 }

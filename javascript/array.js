@@ -44,5 +44,9 @@
 const number = [3,4,7,6,1,2,4,9,8,4,0]
 const sortedarray1=number.sort()
 console.log(sortedarray1)
+
 const reversedArray = numbers.reverse();
 console.log(reversedArray);
+
+const sortedArray2 = numbers.sort((a, b) => a - b);
+console.log(sortedArray2);

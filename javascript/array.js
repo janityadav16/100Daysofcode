@@ -34,8 +34,13 @@
 //   console.log(myArray[i]);
 // }
 
-const myArray = [1, 2, 3, 4, 5];
+// const myArray = [1, 2, 3, 4, 5];
 
-myArray.forEach((element) => {
-  console.log(element);
-});
+// myArray.forEach((element) => {
+//   console.log(element);
+// });
+
+
+let number = [3,4,7,6,1,2,4,9,8,4,0]
+let array=number.sort()
+console.log(array)

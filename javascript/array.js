@@ -41,6 +41,6 @@
 // });
 
 
-let number = [3,4,7,6,1,2,4,9,8,4,0]
-let array=number.sort()
-console.log(array)
+const number = [3,4,7,6,1,2,4,9,8,4,0]
+const sortedarray1=number.sort()
+console.log(sortedarray1)

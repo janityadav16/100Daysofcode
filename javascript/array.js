@@ -41,12 +41,27 @@
 // });
 
 
-const number = [3,4,7,6,1,2,4,9,8,4,0]
-const sortedarray1=number.sort()
-console.log(sortedarray1)
+ const number = [3,4,7,6,1,2,4,9,8,4,0]
+// const sortedarray1=number.sort()
+// console.log(sortedarray1)
 
-const reversedArray = numbers.reverse();
-console.log(reversedArray);
+// const reversedArray = numbers.reverse();
+// console.log(reversedArray);
 
-const sortedArray2 = numbers.sort((a, b) => a - b);
-console.log(sortedArray2);
+// const sortedArray2 = numbers.sort((a, b) => a - b);
+// console.log(sortedArray2);
+
+function bubbleSort(arr) {
+    const length = arr.length;
+    for (let i = 0; i < length - 1; i++) {
+      for (let j = 0; j < length - 1 - i; j++) {
+        if (arr[j] > arr[j + 1]) {
+          [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]];
+        }
+      }
+    }
+    return arr;
+  }
+  
+  const sortedArray1 = bubbleSort(numbers);
+  console.log(sortedArray1);

@@ -66,6 +66,8 @@
 //   const sortedArray1 = bubbleSort(numbers);
 //   console.log(sortedArray1);
 
+
+const number = [5,4,6,2,7,3,9,1,0]
 function selectionSort(arr) {
     const length = arr.length;
     for (let i = 0; i < length - 1; i++) {

@@ -67,22 +67,22 @@
 //   console.log(sortedArray1);
 
 
-const number = [5,4,6,2,7,3,9,1,0]
-function selectionSort(arr) {
-    const length = arr.length;
-    for (let i = 0; i < length - 1; i++) {
-      let minIndex = i;
-      for (let j = i + 1; j < length; j++) {
-        if (arr[j] < arr[minIndex]) {
-          minIndex = j;
-        }
-      }
-      if (minIndex !== i) {
-        [arr[i], arr[minIndex]] = [arr[minIndex], arr[i]];
-      }
-    }
-    return arr;
-  }
+// const number = [5,4,6,2,7,3,9,1,0]
+// function selectionSort(arr) {
+//     const length = arr.length;
+//     for (let i = 0; i < length - 1; i++) {
+//       let minIndex = i;
+//       for (let j = i + 1; j < length; j++) {
+//         if (arr[j] < arr[minIndex]) {
+//           minIndex = j;
+//         }
+//       }
+//       if (minIndex !== i) {
+//         [arr[i], arr[minIndex]] = [arr[minIndex], arr[i]];
+//       }
+//     }
+//     return arr;
+//   }
   
-  const sortedArray2 = selectionSort(numbers);
-  console.log(sortedArray2);
+//   const sortedArray2 = selectionSort(numbers);
+//   console.log(sortedArray2);

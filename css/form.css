@@ -2,8 +2,6 @@
 body {
     background-color: ghostwhite;
     background-image: url(https://assets.newatlas.com/dims4/default/36c89f6/2147483647/strip/true/crop/5000x3502+0+0/resize/2880x2017!/quality/90/?url=http%3A%2F%2Fnewatlas-brightspot.s3.amazonaws.com%2F3e%2Fe8%2F80356654422882922496192fc567%2Fveil-nebula.jpeg);
-  
-   
   }
   
   h2.head {
@@ -16,10 +14,11 @@ body {
   
   .form {
     max-width: 400px;
+    text-align: center;
     font-family: Arial, sans-serif;
     margin: 30px auto;
     padding: 20px 50px 20px 20px;
-    border: 4px solid black;
+    border: 4px solid white;
     border-radius: 10px;
     color: white;
   }
@@ -62,25 +61,8 @@ body {
     margin:10px;
   }
 
-  input[type="reset"]{
-    width: 100%;
-    padding: 10px;
-    color: black;
-    border: 2px solid black;
-    border-radius: 10px;
-    cursor: pointer;
-    margin:10px;
-  }
-  
-  input[type="reset"] {
-    margin:10px;
-    color: black;
-  }
-  
-  input[type="reset"]:hover {
-    background-color: black;
-  }
   input[type="submit"]:hover{
     background-color: black;
+    color:white;
   }
   

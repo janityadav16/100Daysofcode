@@ -86,3 +86,18 @@
   
 //   const sortedArray2 = selectionSort(numbers);
 //   console.log(sortedArray2);
+
+// const rows = [5,4,6,2,7,3,9,1,0]
+// for (let i = 1; i <= rows; i++) {
+//     let pattern = " ".repeat(rows - i) + "*".repeat(2 * i - 1) + " ".repeat(rows - i);
+//     console.log(pattern);
+//   }
+
+  const numbers = [1, 2, 3, 4, 5];
+let sum = 0;
+
+for (let i = 0; i < numbers.length; i++) {
+  sum += numbers[i];
+}
+
+console.log("The sum of the array is:", sum);

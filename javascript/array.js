@@ -93,11 +93,35 @@
 //     console.log(pattern);
 //   }
 
-  const numbers = [1, 2, 3, 4, 5];
-let sum = 0;
+//   const numbers = [1, 2, 3, 4, 5];
+// let sum = 0;
 
-for (let i = 0; i < numbers.length; i++) {
-  sum += numbers[i];
+// for (let i = 0; i < numbers.length; i++) {
+//   sum += numbers[i];
+// }
+
+// // console.log("The sum of the array is:", sum);
+
+// const array = [10, 20, 30, 40, 50];
+// const searchValue = 70;
+
+// for (let i = 0; i < array.length; i++) {
+//   if (array[i] === searchValue) {
+//     found = true;
+//   }
+// }
+
+// console.log("The element is", "found", "in the array.");
+
+const array = [10, 20, 30, 40, 50];
+const searchValue = 50;
+let found = true;
+
+for (let i = 0; i < array.length; i++) {
+  if (array[i] === searchValue) {
+    found = true;
+    break;
+  }
 }
 
-console.log("The sum of the array is:", sum);
+console.log("The element is", found ? "found" : "not found", "in the array.");

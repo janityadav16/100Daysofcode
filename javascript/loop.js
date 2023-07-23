@@ -63,9 +63,51 @@
 //   console.log(pattern);
 // }
 
-const rows = 5
+// const rows = 5
 
-for (let i = 1; i <= rows; i++) {
-  let pattern = " ".repeat(rows - i) + "*".repeat(2 * i - 1) + " ".repeat(rows - i);
+// for (let i = 1; i <= rows; i++) {
+//   let pattern = " ".repeat(rows - i) + "*".repeat(2 * i - 1) + " ".repeat(rows - i);
+//   console.log(pattern);
+// }
+
+const rows=8
+
+for(let i=1; i<=rows; i++){
+  let pattern= "" .repeat(rows - i) + "*".repeat(2 * i - 1) + " ".repeat(rows - i);
   console.log(pattern);
 }
+
+//  const rows=7
+
+//  for (let i=1; i<=rows; i++){
+//  let pattern = "";
+
+
+//  for(let j=1; j<=i; j++ ){
+//   pattern += "*";
+//  }
+//  console.log(pattern);
+// }
+
+// const rows = 5;
+
+// for (let i = 1; i <= rows; i++) {
+//   let pattern = "";
+
+//   for (let j = 1; j <= i; j++) {
+//     pattern += "*";
+//   }
+
+//   console.log(pattern);
+// }
+
+// const rows=7
+// for (let i = rows; i >= 1; i--) {
+//   let pattern = "";
+
+//   for (let j = 1; j <= i; j++) {
+//     pattern += "*";
+//   }
+
+//   console.log(pattern);
+// }

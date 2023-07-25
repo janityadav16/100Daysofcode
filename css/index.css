@@ -86,7 +86,6 @@ li a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-image: "img/7.jpeg";
 }
 
 .banner h1 {

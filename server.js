@@ -108,36 +108,36 @@
 //   ]
 
   
-//   function transposeArray(matrix) {
-//     const numRows = matrix.length;
-//     const numCols = matrix[0].length;
-//     const transposedMatrix = [];
+function transposeArray(matrix) {
+const numRows = matrix.length;
+const numCols = matrix[0].length;
+const transposedMatrix = [];
   
-//     for (let j = 0; j < numCols; j++) {
-//       transposedMatrix[j] = [];
+   for (let j = 0; j < numCols; j++) {
+    transposedMatrix[j] = [];
   
-//       for (let i = 0; i < numRows; i++) {
-//         transposedMatrix[j][i] = matrix[i][j];
-//       }
-//     }
+      for (let i = 0; i < numRows; i++) {
+                transposedMatrix[j][i] = matrix[i][j];
+     }
+   }
   
-//     return transposedMatrix;
-//   }
-  
-//   console.log(transposeArray(matrix));
-
-const primeNumber = 17;
-let isPrime = true;
-
-if (primeNumber < 2) {
-  isPrime = false;
-} else {
-  for (let i = 2; i <= Math.sqrt(primeNumber); i++) {
-    if (primeNumber % i === 0) {
-      isPrime = false;
-      break;
-    }
+   return transposedMatrix;
   }
-}
+  
+  console.log(transposeArray(matrix));
 
-console.log("The number is", isPrime ? "prime." : "not prime.");
+// const primeNumber = 17;
+// let isPrime = true;
+
+// if (primeNumber < 2) {
+//   isPrime = false;
+// } else {
+//   for (let i = 2; i <= Math.sqrt(primeNumber); i++) {
+//     if (primeNumber % i === 0) {
+//       isPrime = false;
+//       break;
+//     }
+//   }
+// }
+
+// console.log("The number is", isPrime ? "prime." : "not prime.");
